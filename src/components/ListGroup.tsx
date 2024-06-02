@@ -8,6 +8,10 @@ interface Props {
 function ListGroup({items ,heading,onSelectItem}: Props) {
     // going to use list mapping, similar to mappping and list comprehension in python
     // hook, taps into built in react features
+
+
+    // quick tip, treat props as immutable and treat state as mutable
+    // good practice
     const [selectedIndex,setSelectedIndex] = useState(-1); // array, first index variable second is updater function
     const [name,setName] = useState(""); 
 
